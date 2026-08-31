@@ -1,42 +1,30 @@
-# sv
+# Recipe finder and Meal Planner
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A recipe app for discovering and meal planning built with Svelte 5, SvelteKit and StencilJs.
 
-## Creating a project
+#Website resources
+- Website URL : https://yum-recipie.netlify.app/
+- npm package: https://www.npmjs.com/package/@gauravgupta14/recipe-ui
 
-If you're seeing this, you've probably already done this step. Congrats!
+# GitHub urls:
+-Svelte kit app: https://github.com/guptagaurav23/recipe-finder-app
+-Stencil components: https://github.com/guptagaurav23/recipe-ui-stencil
 
-```sh
-# create a new project
-npx sv create my-app
-```
+This stencil components which are reusable are : recipe-card, rating, day planner.
 
-To recreate this project with the same configuration:
+# How to run on local?
+- Take pull of both the repos.
+- open cmd in SvelteKit app home directory. 
+	1) npm install
+	2) npm run dev
+	3) Hit the url after running npm run preview.
 
-```sh
-# recreate this project
-npx sv@0.17.0 create --template minimal --types ts --install npm recipe-finder-app
-```
+# How to run Stencil components:
+	1)cd recipe-ui-stencil
+	2)npm install
+	3)npm start 
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+# Publishing nom package
+	1)npm version patch --no-git-tag-version
+	2)npm run build
+	3)npm publish --access public
